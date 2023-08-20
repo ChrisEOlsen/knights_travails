@@ -1,6 +1,7 @@
 Knight's Travails: A Chessboard Shortest Path Finder
 
 Overview
+
     This project finds the shortest path for a knight on a chessboard between two chosen points. The user first selects a starting position and then an end position. Upon clicking the "FIND PATH" button, the shortest path is calculated and displayed on the board, showing the knight's moves as numbered steps.
 
 How to Use

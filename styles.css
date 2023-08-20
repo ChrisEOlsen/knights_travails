@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1e3a8a;
+}
+
+#chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: calc(60px * 8);
+  height: calc(60px * 8);
+  border: 4px solid brown;
+}
+
+#instruct {
+  color: white;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+#reset-button,
+#result-button {
+  padding: 10px;
+  margin-top: 14px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cell {
+  background-color: white;
+  color: green;
+  padding-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.cell.black {
+  background-color: black;
+}
+.cell.white {
+  background-color: white;
+}
+.cell.start {
+  background-color: green;
+  border-radius: 50%;
+}
+.cell.end {
+  background-color: red;
+  border-radius: 50%;
+}
+.cell.path {
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  #chess-board {
+    width: 100vw;
+    height: 100vw;
+  }
+}

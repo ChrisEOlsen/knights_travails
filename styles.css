@@ -90,3 +90,17 @@ body {
     height: 100vw;
   }
 }
+
+@media screen and (orientation: landscape) {
+  body {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
